@@ -25,4 +25,4 @@ class UserRegister(Resource):
         user = UserModel(**data)
         user.save_to_db()
 
-        return {'message': f"user {data['username']} successfuly created"}
+        return {'message': "user {} successfuly created".format(data['username'])}
